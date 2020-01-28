@@ -25,7 +25,7 @@ public class WebConfig implements WebMvcConfigurer {
             final AbstractJackson2HttpMessageConverter converter =
                     (AbstractJackson2HttpMessageConverter) converterFound.get();
             converter.getObjectMapper().enable(SerializationFeature.INDENT_OUTPUT);
-            converter.getObjectMapper().enable(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES);
+//            converter.getObjectMapper().enable(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES);
         }
     }
 }

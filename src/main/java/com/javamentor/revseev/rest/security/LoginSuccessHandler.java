@@ -1,3 +1,4 @@
+/*
 package com.javamentor.revseev.rest.security;
 
 import org.springframework.security.core.Authentication;
@@ -52,6 +53,7 @@ public class LoginSuccessHandler implements AuthenticationSuccessHandler {
     }
 }
 
+*/
 /** from https://www.baeldung.com/spring_redirect_after_login
  *
  * public class MySimpleUrlAuthenticationSuccessHandler

@@ -28,6 +28,10 @@ public class UserServiceImpl implements UserService {
         userRepository.save(user);
     }
 
+    public void updateUser(User user) {
+        saveUser(user);
+    }
+
     @Transactional(readOnly = true)
     public User findById(long id) {
         return userRepository.findById(id).get();
