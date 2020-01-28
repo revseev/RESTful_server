@@ -35,13 +35,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
             .formLogin().disable();
     }
 
-/*     //для разработки
-   @Override
-    public void configure(WebSecurity webSecurity) {
-        webSecurity.ignoring()
-                .antMatchers("/api/**");
-    }*/
-
 /*
     @Override
     public void configure(final WebSecurity web) {
