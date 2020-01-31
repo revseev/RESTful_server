@@ -26,6 +26,11 @@ public class UserRestController {
         return userService.findById(Long.parseLong(id));
     }
 
+    @GetMapping("users/{username}")
+    public User getUserByUsername(@PathVariable String username) {
+        return userService.findByUsername(username);
+    }
+
     @PostMapping(value = "users", produces = MediaType.APPLICATION_JSON_VALUE)
     public User addUser(@RequestBody User user){
         user.setId(0); // force saving a new entity
