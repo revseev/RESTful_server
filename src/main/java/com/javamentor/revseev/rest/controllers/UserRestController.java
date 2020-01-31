@@ -26,8 +26,8 @@ public class UserRestController {
         return userService.findById(Long.parseLong(id));
     }
 
-    @GetMapping("users/{username}")
-    public User getUserByUsername(@PathVariable String username) {
+    @GetMapping("users/")
+    public User getUserByUsername(@RequestParam String username) {
         return userService.findByUsername(username);
     }
 
